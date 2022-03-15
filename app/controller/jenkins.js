@@ -105,7 +105,7 @@ class JenkinsController extends Controller {
       ctx
     } = this;
     ctx.body = {
-      data: ctx
+      data: ctx.request.body
     }
   }
 
