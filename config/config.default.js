@@ -38,7 +38,11 @@ module.exports = appInfo => {
 
   // add your user config here
   const userConfig = {
-    // myAppName: 'egg',
+    security : {
+      csrf: {
+        enable: false,
+      }
+    }
   };
   const pic = {
     serverUrl: 'https://www.qqlykm.cn/api/ACG/'

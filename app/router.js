@@ -12,4 +12,5 @@ module.exports = app => {
   router.get('/jenkins/stop',controller.jenkins.stop)//中止build指令
   router.get('/jenkins/buildInfo',controller.jenkins.buildInfo)//build信息
   router.get('/jenkins/lastBuildNumber',controller.jenkins.lastBuildNumber)//最近build号码
+  router.post('/postconfig',controller.jenkins.postconfig)//预留接口：同步配置
 };
